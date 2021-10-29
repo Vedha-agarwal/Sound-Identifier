@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>Sound Identification Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+    <div class="col-xs-12 text-danger header_div">
+      <h2>Sound Controlled Aliens</h2>
+      <label>Note: Play different sounds like clap, snap, bell to make the aliens dance</label>
+    </div>
+    <div id="body_div">
+      <br>
+      <button id="start" class="btn btn-warning" onclick="startClassifying()">Start</button>
+      <br>
+      <h3 id="result_label">I Can Hear - </h3>
+      <h3 id="accuracy_label">Accuracy - </h3>
+      <br>
+      <img id="alien1" src="aliens-01.png" height="300" width="350">
+      <img id="alien2" src="aliens-02.png" height="300" width="350">
+      <img id="alien3" src="aliens-03.png" height="300" width="350">
+      <img id="alien4" src="aliens-04.png" height="300" width="350">
+    </div>
+    <div id="footer_div">
+      <br>
+      <h2>Developed By - Vedha Agarwal</h2>
+    </div>
+  </center>
+  <script src="main.js"></script>
+</body>
+
+</html>
